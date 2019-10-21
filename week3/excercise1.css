@@ -1,0 +1,16 @@
+/*excercise1.css*/
+
+h1 {
+    font-family: Helvetica;
+}
+.center {
+    display: block;
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+.page {
+    font-family: Helvetica;
+    text-align: center;
+}

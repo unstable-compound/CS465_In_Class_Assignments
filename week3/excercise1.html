@@ -1,38 +1,66 @@
 <head>
   <title>Excercise One</title>
+  <style type="text/css">
+    .center {
+
+      margin: auto;
+      padding: 10px;
+    }
+    #myForm{
+      height: 50%;
+      width: 50%;
+      background-color: #ffffff;
+    }
+    #textBox{
+      height: 50%;
+      width: 50%;
+    }
+
+    body{
+      background: linear-gradient(rgb(10, 180, 10), green);
+      
+    }
+    .page {
+      font-family: Helvetica;
+      text-align: center;
+    }
+  </style>
 </head>
 
-<body> 
-<header>
-  <h1>HTML Form </h1>    
-</header>
-  <form action="my-handling-form-page" method="post">
-    <div>
-      <p>
-        <label for="first">First Name:</label>
-        <input type="text", id = "first" name="first_name">
-      </p>
-    </div>
-    <div>
-      <p>
-        <label for="last">Last Name:</label>
-        <input type="text", id = "last" name="last_name">
-      </p>
-    </div>
-    <div>
-      <p>
-        <label for="email">Email:</label>
-        <input type="email", id = "mail" name="user_mail">
-      </p>
-    </div>
-      <p><input type="button"> Undergraduate Student</p>
-      <p><input type="button"> Graduate Student</p>
-    </div>
-    <div class="buttons">
-      <button type="submit">Submit</button>
-      <button type="reset">Reset</button>
-    </div>
+<body class="page">
+  <header>
+   
+  </header>
+  <div class="center" id="myForm">
+    <form action="my-handling-form-page" method="post"> 
+      <h1>Contact Us </h1>
+      <div>
+        <p>
+          <input type="text" , id="first" name="name" 
+          value="Name">
+        </p>
+      </div>
+
+      <div>
+        <p>
     
+          <input type="email" , id="mail" name="user_mail"
+          value="Email">
+        </p>
+      </div>
+      <div>
+      
+          <textarea id="textBox" name = "message">
+            Enter your message here... 
+          </textarea>
+        
+      </div>
+  </div>
+  <div class="buttons">
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </div>
+
   </form>
-  
+  </div>
 </body>
