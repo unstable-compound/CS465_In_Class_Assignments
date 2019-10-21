@@ -2,65 +2,90 @@
   <title>Excercise One</title>
   <style type="text/css">
     .center {
-
-      margin: auto;
+      width: auto;
+      height: 80%;
+      display: inline-block;
+      border: 3px solid green;
       padding: 10px;
+
     }
-    #myForm{
-      height: 50%;
-      width: 50%;
+    .formContainer{
+      text-align: center;
+
+    }
+    #myForm {
+      height: auto;
+      width: auto;
       background-color: #ffffff;
+
+    }
+    button{
+      background-color: black;
+      border: none;
+      color: white;
+      padding: auto;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e7e7e7;
+      color: black;
     }
     #textBox{
-      height: 50%;
-      width: 50%;
+      height: 20%;
     }
 
-    body{
-      background: linear-gradient(rgb(10, 180, 10), green);
-      
+    .formContent * {
+      width: 100%;
     }
+    .formContent {
+
+      text-align: center;
+      border: 1px black;
+    }
+
+    body {
+      background: linear-gradient(rgb(10, 180, 10), rgb(250, 250, 20))
+    }
+
     .page {
       font-family: Helvetica;
       text-align: center;
     }
   </style>
-</head>
-
-<body class="page">
-  <header>
-   
-  </header>
-  <div class="center" id="myForm">
-    <form action="my-handling-form-page" method="post"> 
-      <h1>Contact Us </h1>
-      <div>
-        <p>
-          <input type="text" , id="first" name="name" 
-          value="Name">
-        </p>
+  </head>
+  
+  <body class="page">
+    <header>
+  
+    </header>
+    <div class="formContainer">
+      <div class="center" id="myForm">
+        <form action="my-handling-form-page" method="post">
+          <h1>Contact Us </h1>
+          <div class="formContent">
+            <p>
+              <input type="text" , id="first" name="name" value="Name">
+            </p>
+            <p>
+              <input type="email" , id="mail" name="user_mail" value="Email">
+            </p>
+            <p>
+              <textarea id="textBox" name="message">
+                  Enter your message here... 
+                </textarea>
+            </p>
+          </div>
+          <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
       </div>
-
-      <div>
-        <p>
-    
-          <input type="email" , id="mail" name="user_mail"
-          value="Email">
-        </p>
-      </div>
-      <div>
-      
-          <textarea id="textBox" name = "message">
-            Enter your message here... 
-          </textarea>
-        
-      </div>
-  </div>
-  <div class="buttons">
-    <button type="submit">Submit</button>
-    <button type="reset">Reset</button>
-  </div>
-
-  </form>
-  </div>
-</body>
+    </div>
+  
+  </body>
