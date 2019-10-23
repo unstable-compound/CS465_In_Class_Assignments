@@ -86,8 +86,7 @@ textarea {
 }
 #contact-form{
   text-align: center;
-  height: auto;
-  width: auto;
+
 }
 button{
   background-color: black;
@@ -107,4 +106,10 @@ button:hover {
 }
 body {
   background: beige;
+}
+
+footer{
+  background: #e7e7e7;
+
+  border: black;
 }
