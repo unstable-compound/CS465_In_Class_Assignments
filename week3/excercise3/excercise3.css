@@ -58,21 +58,53 @@ textarea {
   margin: 0;
 }
 
-#about-me p {
+#about-me p, #my-cat p{
   height: 15%;
 
   margin: 5px;
   padding: 5px;
-  background-color: rgba(77, 85, 84, 0.198);
+  
 }
 .column-halfparent {
   float: left;
   width: 50%;
+  background-color: rgba(77, 85, 84, 0.198);
 }
 
 .clear {
-  clear: both;
+  clear: left;
 }
-hr {
-  display: block;
+
+#experience p{
+
+  margin: 5px;
+  padding: 5px;
+
+}
+#contact-me{
+  background-color: blanchedalmond;
+}
+#contact-form{
+  text-align: center;
+  height: auto;
+  width: auto;
+}
+button{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: auto;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #e7e7e7;
+  color: black;
+}
+body {
+  background: beige;
 }
