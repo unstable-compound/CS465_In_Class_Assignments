@@ -58,8 +58,14 @@ textarea {
     padding: 5px;
     background-color: rgba(77, 85, 84, 0.198);
 }
-#column-halfparent{
+.column-halfparent{
     float: left;
-    width: 50%;
+    width: 50%;   
 }
 
+.clear{
+    clear: both;
+}
+h2{
+    margin: 0%;
+}
