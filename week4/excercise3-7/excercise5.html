@@ -6,6 +6,7 @@
       .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        align-content: stretch;
       }
       .box {
         background: gray;
@@ -29,13 +30,14 @@
       <div>
         <div class="box">Two</div>
       </div>
-      
+
       <div class="parent-container">
         <div class="box flex-container">Three</div>
-      </div>
-      <div class="parent-container">
-        <div class="box flex-container">Four</div>
-        <div class="box flex-container">Five</div>
+
+        <div class="grid-container">
+          <div class="box ">Four</div>
+          <div class="box ">Five</div>
+        </div>
       </div>
     </div>
   </body>
