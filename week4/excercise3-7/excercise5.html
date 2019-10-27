@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Excercise 4</title>
+    <title>Excercise 5</title>
     <style>
+      div {
+        border: 20pt green;
+      }
       .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -20,16 +23,14 @@
         align-content: space-between;
       }
       .parent-container {
-        flex-direction: column;
+        flex-direction: row;
       }
     </style>
   </head>
   <body>
     <div class="box">One</div>
     <div class="grid-container">
-      <div>
-        <div class="box">Two</div>
-      </div>
+      <div class="box">Two</div>
 
       <div class="parent-container">
         <div class="box flex-container">Three</div>
