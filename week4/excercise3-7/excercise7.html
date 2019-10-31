@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Excercise 7</title>
+
+    <style>
+      .box {
+        background: gray;
+        color: white;
+        text-align: left;
+        margin: 1px;
+        padding: 4px;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 9fr;
+        height: 200px;
+        
+        align-content: stretch;
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+      }
+      .flex-container div {
+        flex: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="box ">One</div>
+    </div>
+    <div class="grid-container">
+      <div class="box ">Two</div>
+      <div class="box ">Three</div>
+    </div>
+
+    <div class="flex-container">
+      <div class="box ">Four</div>
+    </div>
+  </body>
+</html>

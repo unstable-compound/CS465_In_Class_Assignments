@@ -8,11 +8,15 @@
         text-align: left;
         margin: 1px;
         padding: 4px;
+    
       }
       .grid-container {
         display: grid;
         grid-template-rows: 6fr 1fr 1fr;
         align-content: stretch;
+      }
+      .col-4 div{
+        height: 99%;
       }
     </style>
     <title>Excercise Six</title>
@@ -24,15 +28,14 @@
     />
     <script
       type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/boot
-    strap.min.js"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"
     ></script>
   </head>
 
   <body>
     <div class="container">
-      <div class="row">
-        <div class="d-flex col-4">
+      <div class="row no-gutters">
+        <div class="col-4 ">
           <div class="box ">One</div>
         </div>
         <div class="col-8">
