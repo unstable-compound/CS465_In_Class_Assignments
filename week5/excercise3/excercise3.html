@@ -1,0 +1,51 @@
+<head>
+  <title>Excercise 3</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bo
+otstrap.min.css" />
+
+<script type="text/javascript" src="excercise3.js"></script>
+</head>
+
+<body>
+  <div class="container" >
+    <div class="border w-50 p-4" class="d-flex justify-content-center">
+      <header>
+        <h3 class=" font-weight-bold text-center">CONTACT US </h1>
+      </header>
+      <form >
+        <div class="form-group" >
+          <p>
+            <label for="name">Name</label><br>
+            <input type="text" , id="name" name="first_name" class="form-control">
+          </p>
+        </div>
+        <div class="form-group">
+          <p>
+            <label for="mail">Email</label><br>
+            <input type="email" , id="mail" name="user-mail" class="form-control">
+          </p>
+        </div>
+        <div class="form-group">
+          <p>
+            <label for="comment">Message</label><br>
+            <textarea id="comment" name="message" class="form-control">
+                      </textarea>
+          </p>
+        </div>
+
+        <div class="buttons">
+          <button id="submitButton" class="btn-primary" >Submit</button>
+          <button class="btn-secondary" type="reset">Reset</button>
+        </div>
+        <script type="text/javascript">
+          document.getElementById("submitButton").onclick = submit();
+       </script>
+
+      </form>
+      
+    </div>
+  </div>
+
+
+
+</body>
