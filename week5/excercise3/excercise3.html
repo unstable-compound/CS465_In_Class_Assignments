@@ -1,19 +1,19 @@
 <head>
   <title>Excercise 3</title>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bo
-otstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script type="text/javascript" src="excercise3.js"></script>
 
-<script type="text/javascript" src="excercise3.js"></script>
 </head>
 
 <body>
-  <div class="container" >
+  <div class="container">
     <div class="border w-50 p-4" class="d-flex justify-content-center">
       <header>
         <h3 class=" font-weight-bold text-center">CONTACT US </h1>
       </header>
-      <form >
-        <div class="form-group" >
+      <form id="myForm" onsubmit="submit()">
+        <div class="form-group">
           <p>
             <label for="name">Name</label><br>
             <input type="text" , id="name" name="first_name" class="form-control">
@@ -29,20 +29,25 @@ otstrap.min.css" />
           <p>
             <label for="comment">Message</label><br>
             <textarea id="comment" name="message" class="form-control">
-                      </textarea>
+                        </textarea>
           </p>
         </div>
 
         <div class="buttons">
-          <button id="submitButton" class="btn-primary" >Submit</button>
+          <button id="subButton" class="btn-primary" type="submit">Submit</button>
+
+
+          <!-- Attempted with this as well as the onsubmit above, and neither seems to work.
+
+            <script>document.getElementById("subButton").onclick = submit();  </script> 
+            
+         --> 
+         
           <button class="btn-secondary" type="reset">Reset</button>
         </div>
-        <script type="text/javascript">
-          document.getElementById("submitButton").onclick = submit();
-       </script>
 
       </form>
-      
+
     </div>
   </div>
 
