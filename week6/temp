@@ -1,0 +1,51 @@
+<div class="container">
+      <div class="border w-50 p-4" class="d-flex justify-content-center">
+        <form id="myForm" action = "/submit" method = "post">
+          <div class="form-group">
+            <p>
+              <label for="name">Name</label><br />
+              <input
+                type="text"
+                ,
+                id="name"
+                name="first_name"
+                class="form-control"
+              />
+            </p>
+          </div>
+          <div class="form-group">
+            <p>
+              <label for="mail">Email</label><br />
+              <input
+                type="email"
+                ,
+                id="mail"
+                name="user-mail"
+                class="form-control"
+              />
+            </p>
+          </div>
+          <div class="form-group">
+            <p>
+              <label for="comment">Message</label><br />
+              <textarea id="comment" name="message" class="form-control">
+              </textarea>
+            </p>
+          </div>
+
+          <div class="buttons">
+            <button id="subButton" class="btn-primary" type="submit">
+              Submit
+            </button>
+
+            <!-- Attempted with this as well as the onsubmit above, and neither seems to work.
+    
+                <script>document.getElementById("subButton").onclick = submit();  </script> 
+                
+             -->
+
+            <button class="btn-secondary" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
