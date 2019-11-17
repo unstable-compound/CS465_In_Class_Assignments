@@ -7,6 +7,17 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://culewis:Y678mv4OHRzx36Pw@cluster0-dcyz1.mongodb.net/test?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
+
+
 var app = express();
 
 // view engine setup
